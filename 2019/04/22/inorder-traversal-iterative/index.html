@@ -6,17 +6,24 @@
     
 
     
-    <title>Category: file system | Hexo</title>
+    <title>Binary Tree Inorder Traversal Iterative | Hexo</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/categories/ruby/file-system/index.html">
+        <meta name="keywords" content="java,datastructure,tree,binary tree,traversal,iterative,fundamental,stack">
+    
+    <meta name="description" content="Recursive way is trivial but iterative takes some time.Both recursive and iterative have a space complexity of O(log(N)) if the tree is well balanced while the worst case is O(N) when the tree is line">
+<meta name="keywords" content="java,datastructure,tree,binary tree,traversal,iterative,fundamental,stack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Binary Tree Inorder Traversal Iterative">
+<meta property="og:url" content="http://yoursite.com/2019/04/22/inorder-traversal-iterative/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Recursive way is trivial but iterative takes some time.Both recursive and iterative have a space complexity of O(log(N)) if the tree is well balanced while the worst case is O(N) when the tree is line">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-04-22T15:20:31.029Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Binary Tree Inorder Traversal Iterative">
+<meta name="twitter:description" content="Recursive way is trivial but iterative takes some time.Both recursive and iterative have a space complexity of O(log(N)) if the tree is well balanced while the worst case is O(N) when the tree is line">
     
 
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
@@ -127,74 +134,154 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-folder-open"></i>Category: <em class="page-title-link">file system</em>
+    <a class="page-title-link" href="/categories/datastructure/">datastructure</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/datastructure/tree/">tree</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/datastructure/tree/traversal/">traversal</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-inorder-traversal-iterative" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/04/21/ruby-file-system/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="http://yoursite.com/2019/04/21/ruby-file-system/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/ruby/">ruby</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/ruby/file-system/">file system</a>
-            </div>
-            <div class="date"><time datetime="2019-04-22T00:15:08.000Z" itemprop="datePublished">2019-04-21</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/04/21/ruby-file-system/">Ruby Copy Files Recursively With an Exclusion Set</a>
+        Binary Tree Inorder Traversal Iterative
         </h1>
     
 
-        <p class="article-excerpt">
-            This is a Ruby file system tutorial.12345678910111213141516require 'find'# copy all files/dirs in $&#123;source_path&#125; to $&#123;target_path&#125;# e.g. copy_without_files('src/dir', 'tgt/dir', Se
-        </p>
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/04/22/inorder-traversal-iterative/" class="article-date">
+            <time datetime="2019-04-22T13:23:16.000Z" itemprop="datePublished">2019-04-22</time>
+        </a>
     </div>
-</article>
-    
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/binary-tree/">binary tree</a>, <a class="tag-link" href="/tags/datastructure/">datastructure</a>, <a class="tag-link" href="/tags/fundamental/">fundamental</a>, <a class="tag-link" href="/tags/iterative/">iterative</a>, <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/stack/">stack</a>, <a class="tag-link" href="/tags/traversal/">traversal</a>, <a class="tag-link" href="/tags/tree/">tree</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h3 id="Recursive-way-is-trivial-but-iterative-takes-some-time"><a href="#Recursive-way-is-trivial-but-iterative-takes-some-time" class="headerlink" title="Recursive way is trivial but iterative takes some time."></a>Recursive way is trivial but iterative takes some time.</h3><p>Both recursive and iterative have a <strong>space complexity</strong> of <strong>O(log(N))</strong> if the tree is well balanced while the worst case is <strong>O(N)</strong> when the tree is linear e.g.:</p>
+<pre><code>    3
+   /
+  2
+ /
+1
+</code></pre><p>Both <strong>time complexities</strong> are <strong>O(N)</strong> as they go over all the nodes.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">TreeNode</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.val = val;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    TreeNode left;</span><br><span class="line">    TreeNode right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">inorder_iter</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 1. if cur node not null then push cur to a stack and make left node cur node</span></span><br><span class="line">    <span class="comment">// 2. if cur == null, stack pop and visit</span></span><br><span class="line">    <span class="comment">// 3. cur node = &#123;popped node right&#125;</span></span><br><span class="line">    Stack&lt;TreeNode&gt; stk = <span class="keyword">new</span> Stack&lt;&gt;();</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">        <span class="comment">// go to the left leaf node</span></span><br><span class="line">        <span class="keyword">while</span> (root != <span class="keyword">null</span>) &#123;</span><br><span class="line">            stk.push(root);</span><br><span class="line">            root = root.left;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (stk.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        root = stk.pop();</span><br><span class="line">        <span class="comment">// visit the node</span></span><br><span class="line">        System.out.println(root.val);</span><br><span class="line">        <span class="comment">// visit the right sub-tree</span></span><br><span class="line">        root = root.right;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">          8</span></span><br><span class="line"><span class="comment">        /   \</span></span><br><span class="line"><span class="comment">      6      10</span></span><br><span class="line"><span class="comment">    /   \      \</span></span><br><span class="line"><span class="comment">   5     7     12</span></span><br><span class="line"><span class="comment">              /</span></span><br><span class="line"><span class="comment">            11</span></span><br><span class="line"><span class="comment">**/</span></span><br></pre></td></tr></table></figure>
+
         </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2019/04/22/inorder-traversal-iterative/" data-id="cjusid34p0001ptdww67yzh7d" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "John Doe"
+        },
+        "headline": "Binary Tree Inorder Traversal Iterative",
+        "image": "http://yoursite.com",
+        "keywords": "java datastructure tree binary tree traversal iterative fundamental stack",
+        "genre": "datastructure tree traversal",
+        "datePublished": "2019-04-22",
+        "dateCreated": "2019-04-22",
+        "dateModified": "2019-04-22",
+        "url": "http://yoursite.com/2019/04/22/inorder-traversal-iterative/",
+        "description": "Recursive way is trivial but iterative takes some time.Both recursive and iterative have a space complexity of O(log(N)) if the tree is well balanced while the worst case is O(N) when the tree is line"
+        "wordCount": 520
+    }
+</script>
+
+</article>
+
+    <section id="comments">
     
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 
-
-    </div></section>
-
+    
+    </section>
 
 
 
@@ -256,6 +343,19 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/04/21/ruby-file-system/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Ruby Copy Files Recursively With an Exclusion Set</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -424,11 +524,13 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://yoursite.com/2019/04/22/inorder-traversal-iterative/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
