@@ -6,17 +6,24 @@
     
 
     
-    <title>Tag: BST | Hexo</title>
+    <title>Dynamic Programming Strategy | Hexo</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/BST/index.html">
+        <meta name="keywords" content="datastructure,fundamental,dp">
+    
+    <meta name="description" content="Quote and Summary from “Dynamic Programming for Coding interviews”.Dynamic Programming Properties: Optimal sub-structures; Overlapping sub-problems.  Strategy for DP Problems: Write recursive solution">
+<meta name="keywords" content="datastructure,fundamental,dp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dynamic Programming Strategy">
+<meta property="og:url" content="http://yoursite.com/2019/05/01/dp-strategy/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Quote and Summary from “Dynamic Programming for Coding interviews”.Dynamic Programming Properties: Optimal sub-structures; Overlapping sub-problems.  Strategy for DP Problems: Write recursive solution">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-05-03T01:57:18.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Dynamic Programming Strategy">
+<meta name="twitter:description" content="Quote and Summary from “Dynamic Programming for Coding interviews”.Dynamic Programming Properties: Optimal sub-structures; Overlapping sub-problems.  Strategy for DP Problems: Write recursive solution">
     
 
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
@@ -127,123 +134,164 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>Tag: <em>BST</em>
+    <a class="page-title-link" href="/categories/datastructure/">datastructure</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/datastructure/dp/">dp</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-dp-strategy" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/04/28/bst-del-node/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://user-images.githubusercontent.com/24547983/56872172-f59a2480-69f3-11e9-9164-b58e03cbf8f6.png)" alt="LeetCode 450. Delete Node in a BST" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="http://yoursite.com/2019/04/28/bst-del-node/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/datastructure/">datastructure</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/datastructure/tree/">tree</a>
-            </div>
-            <div class="date"><time datetime="2019-04-29T00:13:45.000Z" itemprop="datePublished">2019-04-28</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/04/28/bst-del-node/">LeetCode 450. Delete Node in a BST</a>
+        Dynamic Programming Strategy
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/05/01/dp-strategy/" class="article-date">
+            <time datetime="2019-05-02T02:03:43.000Z" itemprop="datePublished">2019-05-01</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/datastructure/">datastructure</a>, <a class="tag-link" href="/tags/dp/">dp</a>, <a class="tag-link" href="/tags/fundamental/">fundamental</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="Quote-and-Summary-from-“Dynamic-Programming-for-Coding-interviews”"><a href="#Quote-and-Summary-from-“Dynamic-Programming-for-Coding-interviews”" class="headerlink" title="Quote and Summary from “Dynamic Programming for Coding interviews”."></a>Quote and Summary from “Dynamic Programming for Coding interviews”.</h2><h3 id="Dynamic-Programming-Properties"><a href="#Dynamic-Programming-Properties" class="headerlink" title="Dynamic Programming Properties:"></a>Dynamic Programming Properties:</h3><ol>
+<li>Optimal sub-structures;</li>
+<li>Overlapping sub-problems.</li>
+</ol>
+<h3 id="Strategy-for-DP-Problems"><a href="#Strategy-for-DP-Problems" class="headerlink" title="Strategy for DP Problems:"></a>Strategy for DP Problems:</h3><ol>
+<li>Write recursive solution<br>1) Define problem in terms of subproblems in a top-down manner;<br>2) Solve base case. The subproblems are solved by recursion, what is left is base case;<br>3) Add a terminating condition.</li>
+<li>Memorization (Recursion + Cache, Top-Down, Optional)</li>
+<li>DP (Bottom-Up)</li>
+</ol>
+<h3 id="DP-Problem-Characteristics"><a href="#DP-Problem-Characteristics" class="headerlink" title="DP Problem Characteristics"></a>DP Problem Characteristics</h3><ol>
+<li>Does it have Dynamic Programming Properties?</li>
+<li>Are we trying to optimize something, maximizing or minimizing something or counting the total number of possible ways to do something?</li>
+</ol>
+
+        </div>
+        <footer class="article-footer">
             
 
 
 
-1234567891011121314151617181920212223242526272829303132333435363738394041class TreeNode &#123;    TreeNode(int val) &#123; this.val = val; &#125;    int val;    TreeNode left;    TreeNode right;&#
-        </p>
+    <a data-url="http://yoursite.com/2019/05/01/dp-strategy/" data-id="cjv7e4vbj0005smxetjgtrw2u" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "John Doe"
+        },
+        "headline": "Dynamic Programming Strategy",
+        "image": "http://yoursite.com",
+        "keywords": "datastructure fundamental dp",
+        "genre": "datastructure dp",
+        "datePublished": "2019-05-01",
+        "dateCreated": "2019-05-01",
+        "dateModified": "2019-05-02",
+        "url": "http://yoursite.com/2019/05/01/dp-strategy/",
+        "description": "Quote and Summary from “Dynamic Programming for Coding interviews”.Dynamic Programming Properties:
+Optimal sub-structures;
+Overlapping sub-problems.
+
+Strategy for DP Problems:
+Write recursive solution"
+        "wordCount": 111
+    }
+</script>
+
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/04/25/bst-find-iterative/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="http://yoursite.com/2019/04/25/bst-find-iterative/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/datastructure/">datastructure</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/datastructure/tree/">tree</a>
-            </div>
-            <div class="date"><time datetime="2019-04-25T13:15:46.000Z" itemprop="datePublished">2019-04-25</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/04/25/bst-find-iterative/">Searching a Value in BST Iteratively</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            12345678910111213141516171819class TreeNode &#123;    public TreeNode(int val) &#123; this.val = val; &#125;    int val;    TreeNode left;    TreeNode right;&#125;public boolean searchBST(TreeNode roo
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
 
-
-    </div></section>
+    
+    </section>
 
 
 
@@ -305,6 +353,19 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/04/28/bst-del-node/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">LeetCode 450. Delete Node in a BST</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -513,11 +574,13 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://yoursite.com/2019/05/01/dp-strategy/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
